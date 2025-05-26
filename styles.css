@@ -261,13 +261,13 @@ section h2::after {
 }
 
 .contact-link {
-    color: var(--primary-color);
+    color: var(--text-color);
     text-decoration: none;
     transition: var(--transition);
 }
 
 .contact-link:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: underline;
 }
 
