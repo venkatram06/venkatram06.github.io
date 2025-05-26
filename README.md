@@ -1,5 +1,30 @@
 # Portfolio Update Guide
 
+## How This Portfolio Was Built
+
+This portfolio website was built using:
+
+1. **HTML5** - For the structure of the website
+2. **CSS3** - For styling and layout
+3. **JavaScript** - For interactivity (when needed)
+4. **Font Awesome Icons** - For icons and visual elements
+5. **Google Fonts (Inter)** - For typography
+
+### Key Features
+- Responsive design that works on all devices
+- Clean, modern layout with a white and black color scheme
+- Sections for About, Skills, Projects, and Contact
+- Font Awesome icons for visual appeal
+- GitHub Pages deployment
+
+### File Structure
+```
+portfolio/
+├── index.html        # Main HTML file
+├── styles.css        # CSS styles
+└── README.md        # This guide
+```
+
 ## Adding a New Skill
 
 To add a new skill, follow these steps:
@@ -70,17 +95,12 @@ Example:
 4. Keep the layout consistent with existing items
 5. Test the changes in a browser before committing
 
-## After Making Changes
+## Deployment
 
-1. Save all files
-2. Run these commands in terminal:
-```bash
-git add .
-git commit -m "Added [your changes]"
-git push origin main
-```
-
-Your changes will be live on your portfolio website shortly after pushing.
+The portfolio is hosted on GitHub Pages:
+1. Push changes to the main branch
+2. GitHub Pages will automatically deploy the website
+3. View your live portfolio at: https://venkatram06.github.io/
 
 ## Font Awesome Icons
 
@@ -90,3 +110,16 @@ Common icons used:
 - Programming languages: `fab fa-python`, `fab fa-html5`, `fab fa-js`
 - Skills: `fas fa-brain`, `fas fa-database`, `fas fa-chart-line`
 - Projects: `fas fa-laptop-code`, `fas fa-chart-bar`, `fas fa-robot`
+
+## Updating the Portfolio
+
+1. Make changes to `index.html` or `styles.css`
+2. Save the files
+3. Run these commands in terminal:
+```bash
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
+The changes will be live on your portfolio website shortly after pushing.
