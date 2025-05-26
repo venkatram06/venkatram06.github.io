@@ -208,6 +208,10 @@ section h2::after {
     margin-bottom: 1.5rem;
 }
 
+.project-details {
+    margin-top: 1.5rem;
+}
+
 .project-details ul {
     list-style: none;
     padding-left: 1.5rem;
@@ -225,6 +229,22 @@ section h2::after {
     position: absolute;
     left: 0;
     color: var(--primary-color);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.project-link:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
 }
 
 /* Contact Section */
