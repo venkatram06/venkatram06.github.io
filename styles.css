@@ -184,12 +184,20 @@ section h2::after {
 }
 
 .project-card {
-    background: #ffffff;
+    background: var(--card-background);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
     transition: var(--transition);
-    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
 }
 
 .project-card:hover {
