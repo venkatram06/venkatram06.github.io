@@ -283,60 +283,7 @@ section h2::after {
     font-size: 1.2rem;
 }
 
-/* Contact Form */
-.contact-form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
-}
 
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #e5e5e5;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: var(--text-color);
-    transition: border-color 0.3s ease;
-}
-
-.form-group input.error,
-.form-group textarea.error {
-    border-color: #ff4444;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-}
-
-.form-group textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 1rem;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.submit-btn:hover {
-    background: var(--secondary-color);
-    transform: translateY(-2px);
-}
 
 /* Footer */
 footer {
