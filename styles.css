@@ -263,16 +263,12 @@ section h2::after {
 .contact-link {
     color: var(--primary-color);
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
     transition: var(--transition);
 }
 
 .contact-link:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .social-links a {
