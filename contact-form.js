@@ -1,15 +1,52 @@
-// Simple contact form handler
+// Contact form handler
 const form = document.getElementById('contact-form');
+const submitBtn = document.querySelector('.submit-btn');
+const formGroup = document.querySelectorAll('.form-group');
 
+// Add validation
+function validateForm() {
+    let isValid = true;
+    formGroup.forEach(group => {
+        const input = group.querySelector('input, textarea');
+        if (!input.value.trim()) {
+            isValid = false;
+            input.classList.add('error');
+        } else {
+            input.classList.remove('error');
+        }
+    });
+    return isValid;
+}
+
+// Handle form submission
 form.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    if (!validateForm()) {
+        alert('Please fill in all fields before submitting.');
+        return;
+    }
     
-    // Here you would typically send this data to a server
-    // For now, we'll just show a success message
-    alert('Thank you for your message! I will get back to you soon.');
-    form.reset();
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    
+    // Simulate form submission
+    setTimeout(() => {
+        alert('Thank you for your message! I will get back to you soon.');
+        form.reset();
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+    }, 1500);
+});
+
+// Add input validation styles
+formGroup.forEach(group => {
+    const input = group.querySelector('input, textarea');
+    
+    input.addEventListener('input', function() {
+        if (this.value.trim()) {
+            this.classList.remove('error');
+        }
+    });
 });
