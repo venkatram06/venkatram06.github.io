@@ -209,3 +209,53 @@ footer {
     border-radius: 10px;
     line-height: 1.8;
 }
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* Hero Section */
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Sections spacing */
+    section {
+        padding: 2rem 1rem;
+    }
+
+    /* Collaboration Section */
+    .collab-card {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .collab-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .collab-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Grid Fix */
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Prevent horizontal scroll */
+body {
+    overflow-x: hidden;
+}
