@@ -405,7 +405,7 @@ footer {
     line-height: 1.8;
 }
 
-/* Mobile Responsive Fix */
+/* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 768px) {
 
     /* Navbar fix */
@@ -424,6 +424,10 @@ footer {
         flex-direction: column;
         gap: 8px;
         align-items: center;
+    }
+
+    nav ul li {
+        margin: 0;
     }
 
     nav ul li a {
