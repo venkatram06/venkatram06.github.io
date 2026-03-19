@@ -198,3 +198,14 @@ footer {
         padding: 3rem 1rem;
     }
 }
+
+#collaboration {
+    margin-top: 3rem;
+}
+
+.collab-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    line-height: 1.8;
+}
