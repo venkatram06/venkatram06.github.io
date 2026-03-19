@@ -408,16 +408,31 @@ footer {
 /* Mobile Responsive Fix */
 @media (max-width: 768px) {
 
-    /* Navbar */
+    /* Navbar fix */
+    .nav-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav h1 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
         align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
     }
 
     /* Hero Section */
     .hero-content h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .hero-content p {
@@ -427,6 +442,12 @@ footer {
     /* Sections spacing */
     section {
         padding: 2rem 1rem;
+    }
+
+    /* Grid Fix */
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
     /* Collaboration Section */
@@ -441,12 +462,6 @@ footer {
 
     .collab-card p {
         font-size: 0.9rem;
-    }
-
-    /* Grid Fix */
-    .skills-grid,
-    .projects-grid {
-        grid-template-columns: 1fr;
     }
 }
 
