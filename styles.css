@@ -274,6 +274,22 @@ footer {
     }
 }
 
+/* Fix top spacing in mobile */
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 0;
+    }
+
+    section:first-of-type {
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
 /* Prevent horizontal scroll */
 body {
     overflow-x: hidden;
